@@ -8,6 +8,15 @@
   <link rel="canonical" href="https://iogame.best/games/deadshot.html" />
   <style>
     body { font-family: 'Segoe UI', Arial, sans-serif; background: #181c23; color: #fff; margin: 0; }
+    header, footer { background: #232733; padding: 20px 0; text-align: center; }
+    .logo h1 { margin: 0; font-size: 2.2em; color: #ff7f2a; }
+    .logo p { margin: 0; color: #bbb; }
+    nav ul { list-style: none; padding: 0; margin: 10px 0 0 0; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #ff7f2a; }
+    .search-bar { margin: 20px auto; max-width: 400px; display: flex; }
+    .search-bar input { flex: 1; padding: 8px; border: none; border-radius: 4px 0 0 4px; }
+    .search-bar button { padding: 8px 16px; border: none; background: #ff7f2a; color: #fff; border-radius: 0 4px 4px 0; cursor: pointer; }
     .container { max-width: 900px; margin: 30px auto; padding: 0 16px; }
     h1 { color: #ff7f2a; }
     .cover { width: 100%; max-width: 400px; border-radius: 8px; margin-bottom: 20px; }
@@ -16,10 +25,30 @@
     @media (max-width: 700px) {
       .container { padding: 0 4px; }
       .cover { max-width: 100%; }
+      nav ul { flex-direction: column; gap: 10px; }
     }
   </style>
 </head>
 <body>
+  <header>
+    <div class="logo">
+      <h1>iogame.best - The Best Free IO Games</h1>
+      <p>Play the most popular and exciting IO games online for free!</p>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/#featured">Featured Games</a></li>
+        <li><a href="/#categories">Categories</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+    </nav>
+    <form class="search-bar" action="/search" method="get">
+      <input type="text" name="q" placeholder="Search IO games...">
+      <button type="submit">Search</button>
+    </form>
+  </header>
+
   <div class="container">
     <h1>Deadshot</h1>
     <img class="cover" src="https://prod.iogames.space/sites/default/files/field_name/iogamespace.png" alt="Deadshot cover">
@@ -32,5 +61,14 @@
     </p>
     <a href="/">&#8592; Back to Home</a>
   </div>
+
+  <footer>
+    <p>&copy; 2024 iogame.best. All rights reserved.</p>
+    <nav>
+      <a href="/privacy">Privacy Policy</a> |
+      <a href="/terms">Terms of Service</a> |
+      <a href="/contact">Contact Us</a>
+    </nav>
+  </footer>
 </body>
 </html> 
