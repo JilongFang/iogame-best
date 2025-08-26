@@ -10,6 +10,15 @@
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EYPRN0FP71"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EYPRN0FP71');
+</script>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYPRN0FP71"></script>
 <script>
@@ -25,13 +34,11 @@
       <h1>iogame.best - The Best Free IO Games</h1>
       <p>Play the most popular and exciting IO games online for free!</p>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#featured">Featured Games</a></li>
-        <li><a href="#categories">Categories</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+    <nav class="flex gap-6 text-gray-700 mt-4 justify-center">
+      <a href="/" class="hover:text-blue-600">Home</a>
+      <a href="#featured" class="hover:text-blue-600">Featured Games</a>
+      <a href="#categories" class="hover:text-blue-600">Categories</a>
+      <a href="/about.html" class="hover:text-blue-600 font-semibold">About Us</a>
     </nav>
     <form class="search-bar" action="/search" method="get">
       <input type="text" name="q" placeholder="Search IO games...">
