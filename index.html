@@ -7,46 +7,8 @@
   <meta name="keywords" content="IO games, online games, free games, Slither.io, Shell Shockers, Smash Karts, multiplayer games, browser games">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="canonical" href="https://iogame.best/" />
-  <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: #181c23; color: #fff; margin: 0; }
-    header, footer { background: #232733; padding: 20px 0; text-align: center; }
-    .logo h1 { margin: 0; font-size: 2.2em; color: #ff7f2a; }
-    .logo p { margin: 0; color: #bbb; }
-    nav ul { list-style: none; padding: 0; margin: 10px 0 0 0; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
-    nav a { color: #fff; text-decoration: none; font-weight: bold; }
-    nav a:hover { color: #ff7f2a; }
-    .search-bar { margin: 20px auto; max-width: 400px; display: flex; }
-    .search-bar input { flex: 1; padding: 8px; border: none; border-radius: 4px 0 0 4px; }
-    .search-bar button { padding: 8px 16px; border: none; background: #ff7f2a; color: #fff; border-radius: 0 4px 4px 0; cursor: pointer; }
-    main { max-width: 1100px; margin: 30px auto; padding: 0 16px; }
-    section { margin-bottom: 40px; }
-    h1 { border-left: 5px solid #ff7f2a; padding-left: 10px; font-size: 2em; margin-bottom: 20px; }
-    h2 { color: #ff7f2a; font-size: 1.3em; margin-bottom: 18px; margin-top: 32px; }
-    .game-list { display: flex; flex-wrap: wrap; gap: 24px; }
-    .game-card { background: #232733; border-radius: 8px; width: 220px; box-shadow: 0 2px 8px #0003; overflow: hidden; transition: transform .2s; }
-    .game-card:hover { transform: translateY(-6px) scale(1.03); }
-    .game-card img { width: 100%; height: 120px; object-fit: cover; }
-    .game-card h3 { margin: 10px 0 5px 0; font-size: 1.1em; color: #ff7f2a; }
-    .game-card p { margin: 0 0 10px 0; color: #ccc; font-size: 0.95em; }
-    .category-list { display: flex; flex-wrap: wrap; gap: 18px; padding: 0; list-style: none; }
-    .category-list li { background: #232733; border-radius: 5px; padding: 8px 18px; }
-    .category-list a { color: #fff; text-decoration: none; }
-    .category-list a:hover { color: #ff7f2a; }
-    footer nav { margin-top: 10px; }
-    footer a { color: #bbb; text-decoration: none; margin: 0 8px; }
-    footer a:hover { color: #ff7f2a; }
-    @media (max-width: 900px) {
-      main { max-width: 98vw; }
-      .game-list { gap: 16px; }
-      .game-card { width: 45vw; min-width: 160px; max-width: 300px; }
-    }
-    @media (max-width: 700px) {
-      .game-list { flex-direction: column; align-items: center; }
-      .game-card { width: 95vw; min-width: 0; }
-      .category-list { flex-direction: column; gap: 10px; }
-      nav ul { flex-direction: column; gap: 10px; }
-    }
-  </style>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EYPRN0FP71"></script>
@@ -151,13 +113,15 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2024 iogame.best. All rights reserved.</p>
-    <nav>
-      <a href="/privacy">Privacy Policy</a> |
-      <a href="/terms">Terms of Service</a> |
-      <a href="/contact">Contact Us</a>
-    </nav>
+  <footer class="bg-base-300 text-base-content py-6 mt-12">
+    <div class="container mx-auto flex flex-col items-center">
+      <p class="mb-2">&copy; 2024 iogame.best. All rights reserved.</p>
+      <div class="join">
+        <a class="btn btn-ghost join-item" href="/faq.html">FAQ</a>
+        <a class="btn btn-ghost join-item" href="/privacy-policy.html">Privacy Policy</a>
+        <a class="btn btn-ghost join-item" href="/term-of-use.html">Terms of Use</a>
+      </div>
+    </div>
   </footer>
 </body>
 
