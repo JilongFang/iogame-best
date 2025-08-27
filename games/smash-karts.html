@@ -30,7 +30,7 @@
         <a href="/" class="hover:text-blue-600 font-semibold">Home</a>
         <a href="/category.html" class="hover:text-blue-600">Categories</a>
         <a href="/aboutus.html" class="hover:text-blue-600">About Us</a>
-        <a href="/contact.html" class="hover:text-blue-600">Contact Us</a>
+  <a href="/contactus.html" class="hover:text-blue-600">Contact Us</a>
       </nav>
     </div>
   </header>
@@ -41,6 +41,10 @@
       <img class="rounded-lg mb-6 w-full max-w-xs" src="https://prod.iogames.space/sites/default/files/SmashKartsIOGameSpace_v5.png" alt="Smash Karts cover">
       <div class="aspect-video w-full max-w-2xl mb-6 rounded-lg overflow-hidden bg-gray-100">
         <iframe src="https://smashkarts.io/?iogs" allowfullscreen class="w-full h-full border-0"></iframe>
+        <div class="relative group">
+          <iframe id="game-frame" src="https://smashkarts.io/?iogs" allowfullscreen class="w-full h-full border-0" style="min-height: 520px; min-width: 130%; height: 520px; width: 130%; max-width: none;"></iframe>
+          <button onclick="fullscreenGame()" title="Fullscreen" class="absolute top-2 right-2 z-10 bg-gray-800/80 text-white rounded px-3 py-1 text-sm hover:bg-blue-600 transition hidden group-hover:block">⛶ Fullscreen</button>
+        </div>
       </div>
       <h2 class="text-xl font-semibold text-gray-800 mb-2">About Smash Karts</h2>
       <p class="text-gray-700 mb-4 text-center">
@@ -52,6 +56,21 @@
 
   <!-- Footer (from index.html) -->
   <footer class="bg-gray-800 text-gray-200 py-6 mt-10">
+  </script>
+  <script>
+  function fullscreenGame() {
+    var iframe = document.getElementById('game-frame');
+    if (iframe.requestFullscreen) {
+      iframe.requestFullscreen();
+    } else if (iframe.mozRequestFullScreen) {
+      iframe.mozRequestFullScreen();
+    } else if (iframe.webkitRequestFullscreen) {
+      iframe.webkitRequestFullscreen();
+    } else if (iframe.msRequestFullscreen) {
+      iframe.msRequestFullscreen();
+    }
+  }
+  </script>
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
       <div class="mb-4 md:mb-0">
         &copy; 2025 iogame.best. All rights reserved.
