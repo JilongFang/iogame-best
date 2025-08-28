@@ -3,6 +3,11 @@ import React from 'react';
 export default function CustomHead() {
 	return (
 		<>
+			<script
+				async
+				src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4128447620867015'
+				crossOrigin='anonymous'
+			></script>
 			{/* <script
 				async
 				src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXX'
