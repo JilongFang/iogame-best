@@ -26,10 +26,11 @@
         <span class="font-bold text-xl text-blue-600">iogame.best</span>
       </a>
       <nav class="flex gap-6 text-gray-700">
-        <a href="/" class="hover:text-blue-600 font-semibold">Home</a>
-        <a href="/category.html" class="hover:text-blue-600">Categories</a>
-        <a href="/aboutus.html" class="hover:text-blue-600">About Us</a>
-  <a href="/contactus.html" class="hover:text-blue-600">Contact Us</a>
+        <a href="/" class="hover:text-blue-600">Home</a>
+        <a href="/aboutus.html" class="hover:text-blue-600 font-semibold">About Us</a>
+        <a href="/contactus.html" class="hover:text-blue-600">Contact Us</a>
+        <a href="/faq.html" class="hover:text-blue-600">FAQ</a>
+        <a href="/privacy-policy.html" class="hover:text-blue-600">Privacy Policy</a>
       </nav>
     </div>
   </header>
@@ -48,17 +49,29 @@
       <p>iogame.best is committed to delivering pure multiplayer online gaming fun to players around the world. Whether you’re a newcomer or a seasoned gamer, you’ll find your best moments here. Join us and discover even more amazing .io games!</p>
     </div>
   </main>
-  <!-- Footer (from index.html) -->
+  <!-- 统一页脚组件 -->
   <footer class="bg-gray-800 text-gray-200 py-6 mt-10">
-    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-      <div class="mb-4 md:mb-0">
-        &copy; 2025 iogame.best. All rights reserved.
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center md:items-end gap-2 text-sm px-4">
+      <div class="flex flex-col items-center md:items-start">
+        <a href="/" class="flex items-center mb-3">
+          <img src="/public/logo.png" alt="logo" class="h-8 mr-2">
+          <span class="font-bold text-lg text-white">iogame.best</span>
+        </a>
+        <div class="flex flex-wrap justify-center gap-x-2 md:gap-x-5 gap-y-1">
+          <a href="/" class="hover:text-blue-400 transition-colors">Home</a>
+          <a href="/aboutus.html" class="hover:text-blue-400 transition-colors">About Us</a>
+          <a href="/contactus.html" class="hover:text-blue-400 transition-colors">Contact Us</a>
+          <a href="/term-of-use.html" class="hover:text-blue-400 transition-colors">Terms of Use</a>
+          <a href="/privacy-policy.html" class="hover:text-blue-400 transition-colors">Privacy Policy</a>
+        </div>
       </div>
-      <div class="space-x-6">
-        <a href="/faq.html" class="hover:text-white">FAQ</a>
-        <a href="/aboutus.html" class="hover:text-white">About Us</a>
-        <a href="/privacy-policy.html" class="hover:text-white">Privacy Policy</a>
-        <a href="/term-of-use.html" class="hover:text-white">Terms of Use</a>
+      <div class="text-center">
+        <p class="mb-2">
+          © 2024 <span class="font-semibold">iogame.best</span> All rights reserved.
+        </p>
+        <p class="text-xs text-gray-400">
+          Best free IO games online - No download required
+        </p>
       </div>
     </div>
   </footer>
